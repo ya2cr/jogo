@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Musica e Fundo</title>
+    </head>
+    <body>
+        <input type="button" id="btnSom" value="tocar"
+           onclick="tocaSom()"/>
+           <canvas id="canv" width="500" height="500">
+           </canvas>
+           <script>
+             var som = new Audio();
+             som.src = 'snd/musica-acao.mp3';
+             som.volume = 0.2;
+             som.load();
+             som.currentTime = 0.0;
+             tocando = false;
+
+           </script>
+    </body>
+</html>
